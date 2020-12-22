@@ -58,7 +58,7 @@ public class LoginActivity extends AppCompatActivity {
         mAuth = FirebaseAuth.getInstance();
         mDatabase = FirebaseDatabase.getInstance().getReference();
 
-        mDialog = new SpotsDialog.Builder().setContext(LoginActivity.this).setMessage("espere un momento").build();
+        mDialog = new SpotsDialog.Builder().setContext(LoginActivity.this).setMessage("Espere un momento").build();
         mPref = getApplicationContext().getSharedPreferences("typeUser",MODE_PRIVATE);
 
         mButtonLogin.setOnClickListener(new View.OnClickListener() {
